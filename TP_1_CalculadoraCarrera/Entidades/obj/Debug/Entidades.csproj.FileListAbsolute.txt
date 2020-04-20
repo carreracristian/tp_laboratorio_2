@@ -1,0 +1,16 @@
+C:\Users\Rocio\Desktop\MiCalculadora\Entidades\bin\Debug\Entidades.dll
+C:\Users\Rocio\Desktop\MiCalculadora\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Rocio\Desktop\MiCalculadora\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Rocio\Desktop\MiCalculadora\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Rocio\Desktop\MiCalculadora\Entidades\obj\Debug\Entidades.dll
+C:\Users\Rocio\Desktop\MiCalculadora\Entidades\obj\Debug\Entidades.pdb
+C:\Users\usuario\Desktop\Tps_Laboratorio_2\tp_laboratorio_2\MiCalculadora\Entidades\bin\Debug\Entidades.dll
+C:\Users\usuario\Desktop\Tps_Laboratorio_2\tp_laboratorio_2\MiCalculadora\Entidades\bin\Debug\Entidades.pdb
+C:\Users\usuario\Desktop\Tps_Laboratorio_2\tp_laboratorio_2\MiCalculadora\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\usuario\Desktop\Tps_Laboratorio_2\tp_laboratorio_2\MiCalculadora\Entidades\obj\Debug\Entidades.dll
+C:\Users\usuario\Desktop\Tps_Laboratorio_2\tp_laboratorio_2\MiCalculadora\Entidades\obj\Debug\Entidades.pdb
+C:\Users\usuario\Desktop\Tps_Laboratorio_2\tp_laboratorio_2\CalculadoraCarrera\Entidades\bin\Debug\Entidades.dll
+C:\Users\usuario\Desktop\Tps_Laboratorio_2\tp_laboratorio_2\CalculadoraCarrera\Entidades\bin\Debug\Entidades.pdb
+C:\Users\usuario\Desktop\Tps_Laboratorio_2\tp_laboratorio_2\CalculadoraCarrera\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\usuario\Desktop\Tps_Laboratorio_2\tp_laboratorio_2\CalculadoraCarrera\Entidades\obj\Debug\Entidades.dll
+C:\Users\usuario\Desktop\Tps_Laboratorio_2\tp_laboratorio_2\CalculadoraCarrera\Entidades\obj\Debug\Entidades.pdb
