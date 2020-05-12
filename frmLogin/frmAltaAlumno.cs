@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,16 +17,17 @@ namespace frmLogin
         {
             InitializeComponent();
         }
+
         private void frmAltaAlumno_Load(object sender, EventArgs e)
         {
-           comboBoxParentesco.DataSource = Enum.GetValues(typeof(EParentesco));
+            comboBoxParentesco.DataSource = Enum.GetValues(typeof(EParentesco));
             comboBox1.DataSource = Enum.GetValues(typeof(EColores));
         }
 
         private void btnGuardarAlumno_Click(object sender, EventArgs e)
         {
             //Obtenemos los datos del alumno
-            string nombreAl=txtNombreAlumno.Text;
+            string nombreAl = txtNombreAlumno.Text;
             txtNombreAlumno.Clear();
             string apellidoAl = txtApellidoAlumno.Text;
             txtApellidoAlumno.Clear();
@@ -35,6 +37,7 @@ namespace frmLogin
                 MessageBox.Show("Ingrese un DNI valido.");
                 return;
             }
+
             txtDniAlumno.Clear();
 
             int legajo = 0;
@@ -43,6 +46,14 @@ namespace frmLogin
                 MessageBox.Show("Ingrese un legajo valido.");
                 return;
             }
+
+            // ==> Verificamos si el legajo existe.
+            if (LegajoExiste(legajo))
+            {
+                MessageBox.Show("El especificado se encuentra actualmente en uso.");
+                return;// Salimos del metodo para evitar almacenar un alumno existente.
+            }
+
             txtLegajoAlumno.Clear();
 
             float precioCuota = 0;
@@ -51,9 +62,10 @@ namespace frmLogin
                 MessageBox.Show("Ingrese un precio valido.");
                 return;
             }
+
             txtPrecioCuotaAlumno.Clear();
 
-            bool femeninoAl=true;
+            bool femeninoAl = true;
             if (rbFemeninoAlumno.Checked)
                 femeninoAl = true;
             else
@@ -61,7 +73,7 @@ namespace frmLogin
 
             EColores colores = (EColores)Enum.Parse(typeof(EColores), Convert.ToString(comboBox1.SelectedItem));
             //Obtenemos los datos del Responsable
-            string nombreRes =txtNombreResponsable.Text;
+            string nombreRes = txtNombreResponsable.Text;
             txtNombreResponsable.Clear();
 
             string apellidoRes = txtApellidoResponsable.Text;
@@ -93,6 +105,20 @@ namespace frmLogin
             Alumno alumno = new Alumno(nombreAl, apellidoAl, dniAl, femeninoAl, precioCuota, responsable, legajo, colores);
             EstadosAplicacion.AlumnosSinAula.Add(alumno);
             MessageBox.Show(alumno.ToString(), "Cantidad de alumnos dados de alta: " + EstadosAplicacion.AlumnosSinAula.Count);
+        }
+
+        private bool LegajoExiste(int legajo)
+        {
+            // Miro si existe en alumnos con aula.
+            if (EstadosAplicacion.AlumnosConAula.Where(x => x.Legajo == legajo).FirstOrDefault() != null)
+                return true;
+
+            // Miro si existe en alumnos sin aula
+            if (EstadosAplicacion.AlumnosSinAula.Where(x => x.Legajo == legajo).FirstOrDefault() != null)
+                return true;
+
+            // Si no existe, false.
+            return false;
         }
 
         private void txtLegajoAlumno_TextChanged(object sender, EventArgs e)

@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Linq; // Linq.U
 using System.Windows.Forms;
 using Entidades;
 namespace frmLogin
@@ -19,23 +15,14 @@ namespace frmLogin
 
         private void BtnBuscarAlumno_Click(object sender, EventArgs e)
         {
-            string apellidoRecibido;
-            apellidoRecibido = txtApellidoAlumno.Text;
+            string apellidoRecibido = txtApellidoAlumno.Text.ToUpper();
+            List<Alumno> alumnosObtenidos = new List<Alumno>();
 
-            List<Alumno> apellidos = new List<Alumno>();
+            alumnosObtenidos.AddRange(EstadosAplicacion.AlumnosConAula.Where(x => x.Apellido.ToUpper().Contains(apellidoRecibido)));
+            alumnosObtenidos.AddRange(EstadosAplicacion.AlumnosSinAula.Where(x => x.Apellido.ToUpper().Contains(apellidoRecibido)));
 
-            foreach (var item in EstadosAplicacion.AlumnosSinAula)
-            {
-                if (apellidoRecibido.CompareTo($"{item.Apellido.ToString()}") == 0)
-                    apellidos.Add(item);
-                /*else if(apellidoRecibido.CompareTo($"{item.Apellido.ToString()}") != 0)
-                {
-                    MessageBox.Show("El apellido ingresado no se encuentra registrado.", "ERROR");
-                }*/
-                  
-            }
-            cmbAlumnos.DataSource = apellidos;
-            
+            cmbAlumnos.DataSource = alumnosObtenidos;
+            cmbAlumnos.Text = string.Empty;
         }
     }
 }
