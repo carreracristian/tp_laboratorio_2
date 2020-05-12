@@ -197,7 +197,7 @@
     <None Include="Resources\aula.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\ClassLibrary1\Entidades.csproj">
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{4612f10f-8ab1-45de-bbf4-83859d05aa99}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
