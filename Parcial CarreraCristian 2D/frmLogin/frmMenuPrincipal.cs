@@ -16,20 +16,7 @@ namespace frmLogin
         {
             InitializeComponent();
         }
-        #region Carga de aulas al menu pricipal
-        private void frmMenuPrincipal_Load(object sender, EventArgs e)
-        {
-            this.IsMdiContainer = true;
-            List<Aula> listaAl = new List<Aula>();
-            foreach (var item in EstadosAplicacion.Aulas)
-            {
-                listaAl.Add(item);
-            }
-            listBoxAulas.DataSource = listaAl;
-           
-        }
-        #endregion
-
+        
         #region Altas
         private void altaDeDocenteToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -53,6 +40,20 @@ namespace frmLogin
         {
             frmAltaAula miAula = new frmAltaAula();
             miAula.ShowDialog();
+        }
+        #endregion
+
+        #region Carga de aulas al menu pricipal
+        private void frmMenuPrincipal_Load(object sender, EventArgs e)
+        {
+            this.IsMdiContainer = true;
+            List<Aula> listaAl = new List<Aula>();
+            foreach (var item in EstadosAplicacion.Aulas)
+            {
+                listaAl.Add(item);
+            }
+            listBoxAulas.DataSource = listaAl;
+
         }
         #endregion
 
@@ -138,11 +139,11 @@ namespace frmLogin
             Docente d4 = new Docente("Cristian", "Diaz", 23564, false, entradaD4, salidaD4, 280);
             Docente d5 = new Docente("German", "Lopez", 35241, false, entradaD5, salidaD5, 400);
             
-            EstadosAplicacion.Profesores.Add(d1);
-            EstadosAplicacion.Profesores.Add(d2);
-            EstadosAplicacion.Profesores.Add(d3);
-            EstadosAplicacion.Profesores.Add(d4);
-            EstadosAplicacion.Profesores.Add(d5);
+            EstadosAplicacion.ProfesoresSinaulas.Add(d1);
+            EstadosAplicacion.ProfesoresSinaulas.Add(d2);
+            EstadosAplicacion.ProfesoresSinaulas.Add(d3);
+            EstadosAplicacion.ProfesoresSinaulas.Add(d4);
+            EstadosAplicacion.ProfesoresSinaulas.Add(d5);
             //Hardcodeo de no docentes
             DateTime entradaND1 = new DateTime(01, 01, 01, 07, 00, 00);
             DateTime entradaND2 = new DateTime(01, 01, 01, 08, 00, 00);

@@ -20,7 +20,7 @@ namespace frmLogin
         private void frmSueldoDocentes_Load(object sender, EventArgs e)
         {
             List<string> lista = new List<string>();
-            foreach (var item in EstadosAplicacion.Profesores)
+            foreach (var item in EstadosAplicacion.ProfesoresSinaulas)
             {
                 lista.Add($"{item.Nombre} {item.Apellido} {item.CalcularSalario()}");
             }
@@ -32,11 +32,17 @@ namespace frmLogin
         private void btnCalcularSueldos_Click(object sender, EventArgs e)
         {
             double salarios=0;
-            foreach (var item in EstadosAplicacion.Profesores)
+            foreach (var item in EstadosAplicacion.ProfesoresSinaulas)
             {
                 salarios += item.CalcularSalario();
             }
             txtTotalDeSueldos.Text =Convert.ToString(salarios);
+            double salarios1 = 0;
+            foreach (var item in EstadosAplicacion.ProfesoresConaulas)
+            {
+                salarios1 += item.CalcularSalario();
+            }
+            txtTotalDeSueldos.Text = Convert.ToString(salarios);
         }
         #endregion
     }

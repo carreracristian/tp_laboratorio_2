@@ -70,9 +70,9 @@ namespace frmLogin
             txtDniDocente.Clear();
             // instanciamos el docente
             Docente docente = new Docente(nombre, apellido, dni, femenino, horaEntrada, horaSalida, valorHora);
-            EstadosAplicacion.Profesores.Add(docente);
+            EstadosAplicacion.ProfesoresSinaulas.Add(docente);
 
-            MessageBox.Show(docente.ToString(),"Cantidad de docentes dados de alta: "+EstadosAplicacion.Profesores.Count);
+            MessageBox.Show(docente.ToString(),"Cantidad de docentes dados de alta: "+EstadosAplicacion.ProfesoresSinaulas.Count);
         }
         #endregion
 

@@ -92,7 +92,7 @@ namespace frmLogin
 
             List<Docente> listaMañana = new List<Docente>();
             List<Docente> listaTarde = new List<Docente>();
-            foreach (var item in EstadosAplicacion.Profesores)
+            foreach (var item in EstadosAplicacion.ProfesoresSinaulas)
             {
                 if ((item.Entrada >= entradaMañana) && (item.Salida <= salidaMañana))
                     listaMañana.Add(item);
@@ -103,10 +103,19 @@ namespace frmLogin
             switch (cmbTurnos.SelectedIndex)
             {
                 case 0:
-                    comboBox3.DataSource = listaMañana;
+                    comboBox3.Items.Clear();
+                    foreach (var item in listaMañana)
+                    {
+                        comboBox3.Items.Add(item);
+                    }
+                    
                     break;
                 case 1:
-                    comboBox3.DataSource = listaTarde;
+                    comboBox3.Items.Clear();
+                    foreach (var item in listaTarde)
+                    {
+                        comboBox3.Items.Add(item);
+                    }
                     break;
             }
         }
@@ -117,7 +126,11 @@ namespace frmLogin
         {
             // TRAER DATOS
             Docente docente = (Docente)comboBox3.SelectedItem;
-            //comboBox3.Items.Remove((Docente)comboBox3.SelectedItem);
+            //Remuevo el docente seleccionado para que no se lo pueda asignar a otra aula
+            comboBox3.Items.Remove((Docente)comboBox3.SelectedItem);
+            //Agrego al docente a a lista de docentes con aula
+            EstadosAplicacion.ProfesoresConaulas.Add(docente);
+
             EColores colores = (EColores)Enum.Parse(typeof(EColores), Convert.ToString(cmbxColores.SelectedItem));
             Eturno turno = (Eturno)Enum.Parse(typeof(Eturno), Convert.ToString(cmbTurnos.SelectedItem));
            
@@ -130,6 +143,18 @@ namespace frmLogin
             EstadosAplicacion.Aulas.Add(aula);
             MessageBox.Show(aula.ToString(), "La cantidad de aulas creadas son: " + EstadosAplicacion.Aulas.Count);
             lbxAlumnosDelAula.Items.Clear();
+            //AGREGAMOS ALUMNOS DEL AULA A LA LISTA DE ALUMNOS CON AULA
+            List<Alumno> alumnosConAula = new List<Alumno>();
+
+            foreach (var item in aula.Alumnos)
+            {
+                alumnosConAula.Add(item);
+            }
+
+            foreach (var item in alumnosConAula)
+            {
+                EstadosAplicacion.AlumnosConAula.Add(item);
+            }
         }
         private void btnAgregar_Click(object sender, EventArgs e)
         {
