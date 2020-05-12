@@ -1,0 +1,64 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using Entidades;
+
+namespace frmLogin
+{
+    public partial class frmAltaDocente : Form
+    {
+
+        public frmAltaDocente()
+        {
+            InitializeComponent();
+        }
+
+        private void btnGuardarDocente_Click(object sender, EventArgs e)
+        {
+            // Obtenemos la informacion del docente.
+            string nombre = txtNombreDocente.Text;
+            string apellido = txtApellidoDocente.Text;
+
+            int valorTxtIngreso = 0;
+            int valorTxtEgreso = 0;
+
+            if (!int.TryParse(txtHoraIngresoDocente.Text, out valorTxtIngreso))
+                MessageBox.Show("Ingrese una hora de ingreso valida.");
+
+            if (!int.TryParse(txtHoraSalidaDocente.Text, out valorTxtEgreso))
+                MessageBox.Show("Ingrese una hora de ingreso valida.");
+
+            DateTime horaEntrada = new DateTime().AddHours(valorTxtIngreso);
+            DateTime horaSalida = new DateTime().AddHours(valorTxtEgreso);
+
+            // sexo
+            bool femenino = rbFemenino.Checked;
+
+
+            // TODO: esto deberia usar tryparse
+            // valor hora
+            double valorHora = double.Parse(txtValorHoraDocente.Text);
+
+            // dni
+            // TODO : FALTA EL TRY PARSE ACA
+            int dni = int.Parse(txtDniDocente.Text);
+
+            // instanciamos el docente
+            Docente docente = new Docente(nombre, apellido, dni, femenino, horaEntrada, horaSalida, valorHora);
+            EstadosAplicacion.Profesores.Add(docente);
+            MessageBox.Show(EstadosAplicacion.Profesores.Count.ToString());
+            MessageBox.Show(EstadosAplicacion.Profesores.Last().ToString());
+        }
+
+        private void txtNombreDocente_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

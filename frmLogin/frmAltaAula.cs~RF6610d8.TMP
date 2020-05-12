@@ -1,0 +1,46 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace frmLogin
+{
+    public partial class frmAltaAula : Form
+    {
+        public frmAltaAula()
+        {
+            InitializeComponent();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmAltaAula_Load(object sender, EventArgs e)
+        {
+            List<string> lista = new List<string>();
+            foreach (var item in EstadosAplicacion.Profesores)
+            {
+                lista.Add($"{item.Nombre} {item.Apellido}");
+            }
+
+            //comboBoxParentesco.DataSource = Enum.GetValues(typeof(EParentesco));
+            comboBox3.DataSource = EstadosAplicacion.Profesores;
+        }
+
+        private void btnGuardarAula_Click(object sender, EventArgs e)
+        {
+            // TRAER DATOS
+
+            // CREAR AULA
+
+            // AGREGAR EN "COLECCION" QUE ESTA EN ESTADO APLICACION.
+        }
+    }
+}
