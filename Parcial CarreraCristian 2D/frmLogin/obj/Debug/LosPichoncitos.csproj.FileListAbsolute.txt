@@ -69,3 +69,27 @@ C:\Users\usuario\Desktop\Parcial laboratorio\tp_laboratorio_2\frmLogin\obj\Debug
 C:\Users\usuario\Desktop\Parcial laboratorio\tp_laboratorio_2\frmLogin\obj\Debug\frmLogin.exe
 C:\Users\usuario\Desktop\Parcial laboratorio\tp_laboratorio_2\frmLogin\obj\Debug\frmLogin.pdb
 C:\Users\usuario\Desktop\Parcial laboratorio\tp_laboratorio_2\frmLogin\obj\Debug\frmLogin.frmAlumnosPorAula.resources
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\bin\Debug\frmLogin.exe.config
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\bin\Debug\frmLogin.exe
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\bin\Debug\frmLogin.pdb
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\bin\Debug\ClassLibrary1.dll
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\bin\Debug\ClassLibrary1.pdb
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\obj\Debug\LosPichoncitos.csprojAssemblyReference.cache
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\obj\Debug\frmLogin.frmLogin.resources
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\obj\Debug\frmLogin.frmAltaAlumno.resources
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\obj\Debug\frmLogin.frmAltaAula.resources
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\obj\Debug\frmLogin.frmAltaDocente.resources
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\obj\Debug\frmLogin.frmAltaNoDocente.resources
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\obj\Debug\frmLogin.frmAlumnosPorAula.resources
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\obj\Debug\frmLogin.frmBusquedaDeAlumno.resources
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\obj\Debug\frmLogin.frmInformacionDeResponsables.resources
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\obj\Debug\frmLogin.frmMenuPrincipal.resources
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\obj\Debug\frmLogin.frmRecaudacionPorAula.resources
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\obj\Debug\frmLogin.frmRecaudacionTotalDelJardin.resources
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\obj\Debug\frmLogin.frmSueldoDocentes.resources
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\obj\Debug\frmLogin.frmSueldoNoDocentes.resources
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\obj\Debug\frmLogin.Properties.Resources.resources
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\obj\Debug\LosPichoncitos.csproj.GenerateResource.cache
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\obj\Debug\LosPichoncitos.csproj.CopyComplete
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\obj\Debug\frmLogin.exe
+C:\Users\usuario\Desktop\Prueba definitiva\tp_laboratorio_2\Parcial CarreraCristian 2D\frmLogin\obj\Debug\frmLogin.pdb

@@ -143,6 +143,40 @@ namespace frmLogin
             EstadosAplicacion.Profesores.Add(d3);
             EstadosAplicacion.Profesores.Add(d4);
             EstadosAplicacion.Profesores.Add(d5);
+            //Hardcodeo de no docentes
+            DateTime entradaND1 = new DateTime(01, 01, 01, 07, 00, 00);
+            DateTime entradaND2 = new DateTime(01, 01, 01, 08, 00, 00);
+            DateTime entradaND3 = new DateTime(01, 01, 01, 17, 00, 00);
+            DateTime entradaND4 = new DateTime(01, 01, 01, 15, 00, 00);
+            DateTime entradaND5 = new DateTime(01, 01, 01, 13, 00, 00);
+            //Horarios de salida
+            DateTime salidaND1 = new DateTime(01, 01, 01, 12, 00, 00);
+            DateTime salidaND2 = new DateTime(01, 01, 01, 11, 00, 00);
+            DateTime salidaND3 = new DateTime(01, 01, 01, 22, 00, 00);
+            DateTime salidaND4 = new DateTime(01, 01, 01, 20, 00, 00);
+            DateTime salidaND5 = new DateTime(01, 01, 01, 19, 00, 00);
+            //Hardcodeo de docentes
+            Administrativo nd1 = new Administrativo("Juan", "Perez", 12345, false, entradaD1, salidaD1, ECargo.Cocina);
+            Administrativo nd2 = new Administrativo("Analia", "Gomez", 32155, true, entradaD2, salidaD2, ECargo.Direccion);
+            Administrativo nd3 = new Administrativo("Pedro", "Correa", 98457, false, entradaD3, salidaD3, ECargo.Porteria);
+            Administrativo nd4 = new Administrativo("Cristian", "Diaz", 23564, false, entradaD4, salidaD4, ECargo.Secretaria);
+            Administrativo nd5 = new Administrativo("German", "Lopez", 35241, false, entradaD5, salidaD5, ECargo.Tesoreria);
+            Administrativo nd6 = new Administrativo("Carlo", "Correa", 12345, false, entradaD1, salidaD1, ECargo.Cocina);
+            Administrativo nd7 = new Administrativo("Juan", "Gomez", 32155, false, entradaD2, salidaD2, ECargo.Direccion);
+            Administrativo nd8 = new Administrativo("Sofia", "Lopez", 98457, true, entradaD3, salidaD3, ECargo.Porteria);
+            Administrativo nd9 = new Administrativo("Cristian", "Bale", 23564, false, entradaD4, salidaD4, ECargo.Secretaria);
+            Administrativo nd10 = new Administrativo("German", "Pezzela", 35241, false, entradaD5, salidaD5, ECargo.Tesoreria);
+            
+            EstadosAplicacion.Administrativos.Add(nd1);
+            EstadosAplicacion.Administrativos.Add(nd2);
+            EstadosAplicacion.Administrativos.Add(nd3);
+            EstadosAplicacion.Administrativos.Add(nd4);
+            EstadosAplicacion.Administrativos.Add(nd5);
+            EstadosAplicacion.Administrativos.Add(nd6);
+            EstadosAplicacion.Administrativos.Add(nd7);
+            EstadosAplicacion.Administrativos.Add(nd8);
+            EstadosAplicacion.Administrativos.Add(nd9);
+            EstadosAplicacion.Administrativos.Add(nd10);
             //Hardcodeo de Responsables
             Responsable r1 = new Responsable("Belen", "Perez", 12345, true, EParentesco.Tia, "12345");
             Responsable r2 = new Responsable("Luciana", "Rodriguez", 54216, true, EParentesco.Madre, "32547");
