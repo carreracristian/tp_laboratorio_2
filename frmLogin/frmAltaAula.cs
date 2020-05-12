@@ -42,7 +42,8 @@ namespace frmLogin
                     listaAl.Add(item);
             }
 
-            lbxAlumnosSinAsignar.DataSource = listaAl;
+            // Le pasamos la lista.
+            lbxAlumnosSinAsignar.Items.AddRange(listaAl.ToArray());
         }
 
         private void frmAltaAula_Load(object sender, EventArgs e)
@@ -54,14 +55,19 @@ namespace frmLogin
         private void btnGuardarAula_Click(object sender, EventArgs e)
         {
             // TRAER DATOS
+
             int select = comboBox3.SelectedIndex;
             Docente docente = (Docente)comboBox3.SelectedItem;
-            //comboBox3.Items.RemoveAt(select);REVISAR
+            //comboBox3.Items.RemoveAt(select); REVISAR
             EColores colores = (EColores)Enum.Parse(typeof(EColores), Convert.ToString(cmbxColores.SelectedItem));
             Eturno turno = (Eturno)Enum.Parse(typeof(Eturno), Convert.ToString(cmbTurnos.SelectedItem));
             //alumnos.Add(alumnosRecibidos);
+            
             // CREAR AULA   
             Aula aula = new Aula(colores, turno, docente);
+
+            aula.Alumnos = lbxAlumnosDelAula.Items.Cast<Alumno>().ToList();
+
             foreach (var item in aula.Alumnos)
             {
                 if (aula.Alumnos.Count < 30)
@@ -79,21 +85,13 @@ namespace frmLogin
         }
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            //for(int i=lbxAlumnosSinAsignar.SelectedItems.Count -1; i>= 0;i--)
-            if (lbxAlumnosSinAsignar.Items.Count > 0)
+            if (lbxAlumnosSinAsignar.Items.Count > 0 && lbxAlumnosSinAsignar.SelectedItem != null)
             {
                 // Pasamos de un listbox a otro.
                 lbxAlumnosDelAula.Items.Add(lbxAlumnosSinAsignar.SelectedItem);
 
-                // Obtenemos el datasource.
-                var dataSource = (List<Alumno>)lbxAlumnosSinAsignar.DataSource;
-                lbxAlumnosSinAsignar.DataSource = null;
-
                 // Removemos el objeto seleccionado.
-                dataSource.Remove((Alumno)lbxAlumnosSinAsignar.SelectedItem);
-                lbxAlumnosSinAsignar.DataSource = dataSource;
-                lbxAlumnosSinAsignar.Update();
-                lbxAlumnosSinAsignar.Refresh();
+                lbxAlumnosSinAsignar.Items.Remove((Alumno)lbxAlumnosSinAsignar.SelectedItem);
             }
             else
             {
