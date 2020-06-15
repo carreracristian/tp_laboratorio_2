@@ -26,13 +26,23 @@ namespace ClasesInstanciables
             this.clasesDelDia = new Queue<Universidad.EClases>();
             this._randomClases();
         }
+        /// <summary>
+        /// Mostramos los datos del profesor
+        /// </summary>
+        /// <returns></returns>
         protected override string MostrarDatos()
         {
-            return $"Id NUMERO: {legajo}" +
-                   $"CLASES DEL DIA: {clasesDelDia.ToString()}" +
-                   $"NOMBRE COMPLETO:{Apellido}, {Nombre} " +
-                   $"NACIONALIDAD: {Nacionalidad.ToString()}";
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine(base.MostrarDatos());
+            sb.AppendLine(this.ParticiparEnClase());
+
+            return sb.ToString();
+            
         }
+        /// <summary>
+        /// Implementamos el metodo abstracto ParticiparEnClase()
+        /// </summary>
+        /// <returns></returns>
         protected override string ParticiparEnClase()
         {
             StringBuilder sb = new StringBuilder();
@@ -42,11 +52,22 @@ namespace ClasesInstanciables
                 sb.AppendLine(item.ToString());
             }
             return sb.ToString();
+           
         }
+        /// <summary>
+        /// hacemos publicos los datos del profesor
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return this.MostrarDatos();
         }
+        /// <summary>
+        /// Sobrecarga del operador == para mostrar profesores por clase
+        /// </summary>
+        /// <param name="i"></param>
+        /// <param name="clase"></param>
+        /// <returns></returns>
         public static bool operator ==(Profesor i, Universidad.EClases clase)
         {
             foreach (Universidad.EClases item in i.clasesDelDia)
@@ -56,10 +77,19 @@ namespace ClasesInstanciables
             }
             return false;
         }
+        /// <summary>
+        /// Sobrecarga del operador != para mostrar profesores por clase
+        /// </summary>
+        /// <param name="i"></param>
+        /// <param name="clase"></param>
+        /// <returns></returns>
         public static bool operator !=(Profesor i, Universidad.EClases clase)
         {
             return !(i == clase);
         }
+        /// <summary>
+        /// Asignamos dos clases al azar para cada profesor
+        /// </summary>
         public void _randomClases()
         {
             Universidad.EClases aux;

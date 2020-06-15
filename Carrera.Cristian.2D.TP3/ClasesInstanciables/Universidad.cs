@@ -61,6 +61,12 @@ namespace ClasesInstanciables
             this.jornada = new List<Jornada>();
             this.profesores = new List<Profesor>();
         }
+        /// <summary>
+        /// Sobrecarga del operador == para saber si el alumno esta inscripto en dicha universidad
+        /// </summary>
+        /// <param name="u"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static bool operator ==(Universidad u, Alumno a)
         {
             foreach (Alumno item in u.Alumnos)
@@ -72,10 +78,22 @@ namespace ClasesInstanciables
             }
             return false;
         }
+        /// <summary>
+        /// Sobrecarga del operador != para saber si el alumno esta inscripto en dicha universidad
+        /// </summary>
+        /// <param name="u"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static bool operator !=(Universidad u, Alumno a)
         {
             return !(u == a);
         }
+        /// <summary>
+        /// Sobrecarga del operador == para saber si el profesor da clases en dicha universidad
+        /// </summary>
+        /// <param name="u"></param>
+        /// <param name="p"></param>
+        /// <returns></returns>
         public static bool operator ==(Universidad u, Profesor p)
         {
             foreach (Profesor item in u.Profesores)
@@ -87,17 +105,37 @@ namespace ClasesInstanciables
             }
             return false;
         }
+        /// <summary>
+        /// Sobrecarga del operador != para saber si el profesor da clases en dicha universidad
+        /// </summary>
+        /// <param name="u"></param>
+        /// <param name="p"></param>
+        /// <returns></returns>
         public static bool operator !=(Universidad u, Profesor p)
         {
             return !(u == p);
         }
+        /// <summary>
+        /// sobrecarga del operador + para agregar una clase a un Universidad se deberá generar y 
+        /// agregar una nueva Jornada indicando la clase, un Profesor que pueda darla (según su atributo
+        /// ClasesDelDia) y la lista de alumnos que la toman (todos los que coincidan en su campo 
+        /// ClaseQueToma)
+        /// </summary>
+        /// <param name="g"></param>
+        /// <param name="clase"></param>
+        /// <returns></returns>
         public static Universidad operator +(Universidad g, EClases clase)
         {
-            Universidad u = new Universidad();
-            Jornada j = new Jornada();
-            j.Clase = clase;
+            Jornada j = new Jornada(clase,(g==clase));
 
-            foreach (Alumno item in g.Alumnos)
+            for (int i = 0; i < g.Alumnos.Count; i++)
+            {
+                if (g.Alumnos[i] == clase)
+                    j.Alumnos.Add(g.Alumnos[i]);
+
+            }
+            g.Jornadas.Add(j);
+            /*foreach (Alumno item in g.Alumnos)
             {
                 if (item.claseQueToma == clase)
                     j.Alumnos.Add(item);
@@ -114,10 +152,17 @@ namespace ClasesInstanciables
             }
             u.Alumnos = j.Alumnos;
             u.Profesores.Add(j.Instructor);
-            u.Jornadas.Add(j);
+            u.Jornadas.Add(j);*/
 
-            return u;
+            return g;
         }
+        /// <summary>
+        /// sobrecarga del operador + para agregar alumnos alumnos verificando 
+        /// que no esten previamente cargados
+        /// </summary>
+        /// <param name="u"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static Universidad operator +(Universidad u, Alumno a)
         {
             foreach (Alumno item in u.Alumnos)
@@ -129,6 +174,13 @@ namespace ClasesInstanciables
             }
             return u;
         }
+        /// <summary>
+        /// sobrecarga del operador + para agregar profesores verificando 
+        /// que no esten previamente cargados
+        /// </summary>
+        /// <param name="u"></param>
+        /// <param name="p"></param>
+        /// <returns></returns>
         public static Universidad operator +(Universidad u, Profesor p)
         {
             foreach (Profesor item in u.Profesores)
@@ -138,6 +190,13 @@ namespace ClasesInstanciables
             }
             return u;
         }
+        /// <summary>
+        /// La igualación entre un Universidad y una Clase retornará el primer 
+        /// Profesor capaz de dar esa clase. Sino, lanzará la Excepción SinProfesorException
+        /// </summary>
+        /// <param name="g"></param>
+        /// <param name="clase"></param>
+        /// <returns></returns>
         public static Profesor operator ==(Universidad g,EClases clase)
         {
             Profesor p = new Profesor();
@@ -162,6 +221,12 @@ namespace ClasesInstanciables
             return p;
             
         }
+        /// <summary>
+        /// Sobrecarga del operador != retornará el primer Profesor que no pueda dar la clase.
+        /// </summary>
+        /// <param name="g"></param>
+        /// <param name="clase"></param>
+        /// <returns></returns>
         public static Profesor operator !=(Universidad g, EClases clase)
         {
             Profesor p = new Profesor();
