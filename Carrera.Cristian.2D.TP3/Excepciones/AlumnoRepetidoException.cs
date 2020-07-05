@@ -8,11 +8,7 @@ namespace Excepciones
 {
     public class AlumnoRepetidoException:Exception
     {
-        public AlumnoRepetidoException()
-        {
-
-        }
-        public AlumnoRepetidoException(string mensaje):base(mensaje)
+        public AlumnoRepetidoException():base("El alumno ya se encuentra registrado")
         {
 
         }

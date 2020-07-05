@@ -1,0 +1,19 @@
+CLASE DE: Laboratorio DIRIGIDA POR: NOMBRE COMPLETO: Lopez,  
+ Nacionalidad: Argentino
+ DNI: 12224458
+Legajo: 1
+
+CLASES DEL DIA: 
+Legislacion
+Laboratorio
+
+ALUMNOS: 
+NOMBRE COMPLETO: Suarez,  
+ Nacionalidad: Extranjero
+ DNI: 91122456
+Legajo: 7
+
+TOMA CLASE DE: Laboratorio
+Estado de cuenta: AlDia
+
+
