@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Annalee</Nombre>
+  <Apellido>Beckson</Apellido>
+  <Direccion>31 American Avenue</Direccion>
+  <Dni>57049185</Dni>
+  <Edad>4</Edad>
+  <NotaUno>3</NotaUno>
+  <NotaDos>9</NotaDos>
+  <NotaTres>6</NotaTres>
+  <IdAlumno>9</IdAlumno>
+  <Responsable>30</Responsable>
+</Alumno>

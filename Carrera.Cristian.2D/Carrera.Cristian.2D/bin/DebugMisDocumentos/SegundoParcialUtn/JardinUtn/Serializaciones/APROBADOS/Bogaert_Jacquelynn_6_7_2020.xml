@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Jacquelynn</Nombre>
+  <Apellido>Bogaert</Apellido>
+  <Direccion>0097 Hazelcrest Crossing</Direccion>
+  <Dni>51307815</Dni>
+  <Edad>4</Edad>
+  <NotaUno>7</NotaUno>
+  <NotaDos>7</NotaDos>
+  <NotaTres>7</NotaTres>
+  <IdAlumno>24</IdAlumno>
+  <Responsable>23</Responsable>
+</Alumno>

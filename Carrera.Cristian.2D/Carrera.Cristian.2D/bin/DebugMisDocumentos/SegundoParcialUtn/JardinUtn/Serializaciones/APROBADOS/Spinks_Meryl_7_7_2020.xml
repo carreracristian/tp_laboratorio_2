@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Meryl</Nombre>
+  <Apellido>Spinks</Apellido>
+  <Direccion>906 Luster Court</Direccion>
+  <Dni>54704785</Dni>
+  <Edad>6</Edad>
+  <NotaUno>4</NotaUno>
+  <NotaDos>9</NotaDos>
+  <NotaFinal>6</NotaFinal>
+  <IdAlumno>2</IdAlumno>
+  <Responsable>22</Responsable>
+</Alumno>

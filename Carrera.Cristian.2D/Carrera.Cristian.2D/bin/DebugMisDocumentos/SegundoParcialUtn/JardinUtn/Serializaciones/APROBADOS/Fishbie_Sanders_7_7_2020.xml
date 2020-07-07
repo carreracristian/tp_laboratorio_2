@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Sanders</Nombre>
+  <Apellido>Fishbie</Apellido>
+  <Direccion>8534 Muir Circle</Direccion>
+  <Dni>55347017</Dni>
+  <Edad>4</Edad>
+  <NotaUno>6</NotaUno>
+  <NotaDos>7</NotaDos>
+  <NotaFinal>6</NotaFinal>
+  <IdAlumno>12</IdAlumno>
+  <Responsable>15</Responsable>
+</Alumno>

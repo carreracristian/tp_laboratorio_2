@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Adel</Nombre>
+  <Apellido>Guymer</Apellido>
+  <Direccion>8354 New Castle Hill</Direccion>
+  <Dni>51252402</Dni>
+  <Edad>5</Edad>
+  <NotaUno>9</NotaUno>
+  <NotaDos>1</NotaDos>
+  <NotaTres>5</NotaTres>
+  <IdAlumno>23</IdAlumno>
+  <Responsable>3</Responsable>
+</Alumno>

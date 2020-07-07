@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Maximo</Nombre>
+  <Apellido>Robez</Apellido>
+  <Direccion>5742 Dorton Circle</Direccion>
+  <Dni>59637009</Dni>
+  <Edad>4</Edad>
+  <NotaUno>2</NotaUno>
+  <NotaDos>1</NotaDos>
+  <NotaFinal>1</NotaFinal>
+  <IdAlumno>14</IdAlumno>
+  <Responsable>17</Responsable>
+</Alumno>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Hertha</Nombre>
+  <Apellido>Dewan</Apellido>
+  <Direccion>78 Hazelcrest Road</Direccion>
+  <Dni>51868513</Dni>
+  <Edad>6</Edad>
+  <NotaUno>3</NotaUno>
+  <NotaDos>3</NotaDos>
+  <NotaFinal>3</NotaFinal>
+  <IdAlumno>6</IdAlumno>
+  <Responsable>1</Responsable>
+</Alumno>

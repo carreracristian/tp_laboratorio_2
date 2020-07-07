@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Karole</Nombre>
+  <Apellido>Prangnell</Apellido>
+  <Direccion>8 Lerdahl Circle</Direccion>
+  <Dni>55599975</Dni>
+  <Edad>5</Edad>
+  <NotaUno>0</NotaUno>
+  <NotaDos>0</NotaDos>
+  <NotaTres>0</NotaTres>
+  <IdAlumno>1</IdAlumno>
+  <Responsable>5</Responsable>
+</Alumno>

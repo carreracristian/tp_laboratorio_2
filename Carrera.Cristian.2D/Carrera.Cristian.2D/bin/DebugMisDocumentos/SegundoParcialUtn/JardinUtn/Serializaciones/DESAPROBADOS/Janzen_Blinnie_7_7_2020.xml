@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Blinnie</Nombre>
+  <Apellido>Janzen</Apellido>
+  <Direccion>36 Chinook Lane</Direccion>
+  <Dni>50256021</Dni>
+  <Edad>5</Edad>
+  <NotaUno>9</NotaUno>
+  <NotaDos>2</NotaDos>
+  <NotaFinal>5</NotaFinal>
+  <IdAlumno>4</IdAlumno>
+  <Responsable>2</Responsable>
+</Alumno>

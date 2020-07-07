@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Worth</Nombre>
+  <Apellido>Iveagh</Apellido>
+  <Direccion>8035 Harper Terrace</Direccion>
+  <Dni>51699845</Dni>
+  <Edad>5</Edad>
+  <NotaUno>1</NotaUno>
+  <NotaDos>2</NotaDos>
+  <NotaFinal>1</NotaFinal>
+  <IdAlumno>13</IdAlumno>
+  <Responsable>25</Responsable>
+</Alumno>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Juan</Nombre>
+  <Apellido>Perez</Apellido>
+  <Direccion>Lima 2234</Direccion>
+  <Dni>34334432</Dni>
+  <Edad>4</Edad>
+  <NotaUno>8</NotaUno>
+  <NotaDos>6</NotaDos>
+  <NotaFinal>7</NotaFinal>
+  <IdAlumno>1</IdAlumno>
+  <Responsable>5</Responsable>
+</Alumno>

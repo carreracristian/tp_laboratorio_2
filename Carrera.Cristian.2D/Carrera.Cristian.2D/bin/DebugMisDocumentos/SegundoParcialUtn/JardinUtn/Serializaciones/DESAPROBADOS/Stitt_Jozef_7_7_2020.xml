@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Jozef</Nombre>
+  <Apellido>Stitt</Apellido>
+  <Direccion>64735 Kipling Way</Direccion>
+  <Dni>55676051</Dni>
+  <Edad>6</Edad>
+  <NotaUno>2</NotaUno>
+  <NotaDos>3</NotaDos>
+  <NotaFinal>2</NotaFinal>
+  <IdAlumno>10</IdAlumno>
+  <Responsable>21</Responsable>
+</Alumno>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Shermie</Nombre>
+  <Apellido>Sacaze</Apellido>
+  <Direccion>1740 Loomis Parkway</Direccion>
+  <Dni>58203316</Dni>
+  <Edad>6</Edad>
+  <NotaUno>4</NotaUno>
+  <NotaDos>2</NotaDos>
+  <NotaFinal>3</NotaFinal>
+  <IdAlumno>7</IdAlumno>
+  <Responsable>13</Responsable>
+</Alumno>

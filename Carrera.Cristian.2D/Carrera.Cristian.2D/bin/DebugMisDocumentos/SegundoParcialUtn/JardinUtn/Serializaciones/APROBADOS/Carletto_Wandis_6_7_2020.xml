@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Wandis</Nombre>
+  <Apellido>Carletto</Apellido>
+  <Direccion>3 7th Terrace</Direccion>
+  <Dni>56517132</Dni>
+  <Edad>4</Edad>
+  <NotaUno>8</NotaUno>
+  <NotaDos>6</NotaDos>
+  <NotaTres>7</NotaTres>
+  <IdAlumno>25</IdAlumno>
+  <Responsable>10</Responsable>
+</Alumno>

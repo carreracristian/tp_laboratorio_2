@@ -1,0 +1,9 @@
+C:\Users\usuario\Desktop\Parcial2Lab\Carrera.Cristian.2D\Archivos\bin\Debug\Archivos.dll
+C:\Users\usuario\Desktop\Parcial2Lab\Carrera.Cristian.2D\Archivos\bin\Debug\Archivos.pdb
+C:\Users\usuario\Desktop\Parcial2Lab\Carrera.Cristian.2D\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
+C:\Users\usuario\Desktop\Parcial2Lab\Carrera.Cristian.2D\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Desktop\Parcial2Lab\Carrera.Cristian.2D\Archivos\obj\Debug\Archivos.dll
+C:\Users\usuario\Desktop\Parcial2Lab\Carrera.Cristian.2D\Archivos\obj\Debug\Archivos.pdb
+C:\Users\usuario\Desktop\Parcial2Lab\Carrera.Cristian.2D\Archivos\bin\Debug\Excepciones.dll
+C:\Users\usuario\Desktop\Parcial2Lab\Carrera.Cristian.2D\Archivos\bin\Debug\Excepciones.pdb
+C:\Users\usuario\Desktop\Parcial2Lab\Carrera.Cristian.2D\Archivos\obj\Debug\Archivos.csproj.CopyComplete

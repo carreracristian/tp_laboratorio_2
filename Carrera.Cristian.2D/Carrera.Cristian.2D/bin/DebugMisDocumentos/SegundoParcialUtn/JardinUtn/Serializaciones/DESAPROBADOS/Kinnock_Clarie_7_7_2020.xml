@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Clarie</Nombre>
+  <Apellido>Kinnock</Apellido>
+  <Direccion>445 7th Park</Direccion>
+  <Dni>54840731</Dni>
+  <Edad>4</Edad>
+  <NotaUno>3</NotaUno>
+  <NotaDos>1</NotaDos>
+  <NotaFinal>2</NotaFinal>
+  <IdAlumno>29</IdAlumno>
+  <Responsable>2</Responsable>
+</Alumno>

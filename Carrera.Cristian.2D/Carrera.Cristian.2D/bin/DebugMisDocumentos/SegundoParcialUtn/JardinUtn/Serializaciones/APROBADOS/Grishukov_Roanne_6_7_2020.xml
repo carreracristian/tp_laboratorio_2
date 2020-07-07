@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Roanne</Nombre>
+  <Apellido>Grishukov</Apellido>
+  <Direccion>32691 Annamark Hill</Direccion>
+  <Dni>51005980</Dni>
+  <Edad>4</Edad>
+  <NotaUno>8</NotaUno>
+  <NotaDos>9</NotaDos>
+  <NotaTres>8</NotaTres>
+  <IdAlumno>26</IdAlumno>
+  <Responsable>7</Responsable>
+</Alumno>

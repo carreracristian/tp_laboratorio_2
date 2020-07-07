@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Mira</Nombre>
+  <Apellido>Kopfer</Apellido>
+  <Direccion>22794 Charing Cross Way</Direccion>
+  <Dni>51501446</Dni>
+  <Edad>6</Edad>
+  <NotaUno>9</NotaUno>
+  <NotaDos>3</NotaDos>
+  <NotaFinal>6</NotaFinal>
+  <IdAlumno>17</IdAlumno>
+  <Responsable>20</Responsable>
+</Alumno>

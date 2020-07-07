@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Evelin</Nombre>
+  <Apellido>Emlin</Apellido>
+  <Direccion>1433 Redwing Alley</Direccion>
+  <Dni>58492303</Dni>
+  <Edad>4</Edad>
+  <NotaUno>1</NotaUno>
+  <NotaDos>4</NotaDos>
+  <NotaTres>2</NotaTres>
+  <IdAlumno>28</IdAlumno>
+  <Responsable>16</Responsable>
+</Alumno>

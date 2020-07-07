@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Carey</Nombre>
+  <Apellido>Gheorghie</Apellido>
+  <Direccion>64 Shoshone Center</Direccion>
+  <Dni>51201609</Dni>
+  <Edad>5</Edad>
+  <NotaUno>9</NotaUno>
+  <NotaDos>2</NotaDos>
+  <NotaFinal>5</NotaFinal>
+  <IdAlumno>16</IdAlumno>
+  <Responsable>5</Responsable>
+</Alumno>

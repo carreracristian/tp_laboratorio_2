@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Joann</Nombre>
+  <Apellido>Mussalli</Apellido>
+  <Direccion>50971 North Park</Direccion>
+  <Dni>54866610</Dni>
+  <Edad>4</Edad>
+  <NotaUno>8</NotaUno>
+  <NotaDos>3</NotaDos>
+  <NotaFinal>5</NotaFinal>
+  <IdAlumno>21</IdAlumno>
+  <Responsable>5</Responsable>
+</Alumno>

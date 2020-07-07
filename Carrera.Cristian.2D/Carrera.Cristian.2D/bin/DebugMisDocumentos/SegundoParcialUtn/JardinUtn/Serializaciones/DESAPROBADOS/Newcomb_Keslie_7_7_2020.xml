@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Keslie</Nombre>
+  <Apellido>Newcomb</Apellido>
+  <Direccion>93 Manitowish Parkway</Direccion>
+  <Dni>52273191</Dni>
+  <Edad>4</Edad>
+  <NotaUno>6</NotaUno>
+  <NotaDos>2</NotaDos>
+  <NotaFinal>4</NotaFinal>
+  <IdAlumno>30</IdAlumno>
+  <Responsable>21</Responsable>
+</Alumno>

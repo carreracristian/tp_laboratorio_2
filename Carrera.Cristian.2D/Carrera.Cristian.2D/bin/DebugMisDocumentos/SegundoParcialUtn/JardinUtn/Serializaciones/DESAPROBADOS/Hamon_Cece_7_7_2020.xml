@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Cece</Nombre>
+  <Apellido>Hamon</Apellido>
+  <Direccion>590 Weeping Birch Road</Direccion>
+  <Dni>50509081</Dni>
+  <Edad>6</Edad>
+  <NotaUno>1</NotaUno>
+  <NotaDos>3</NotaDos>
+  <NotaFinal>2</NotaFinal>
+  <IdAlumno>19</IdAlumno>
+  <Responsable>10</Responsable>
+</Alumno>

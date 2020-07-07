@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>Eziechiele</Nombre>
+  <Apellido>Kleinsmuntz</Apellido>
+  <Direccion>741 Lakewood Place</Direccion>
+  <Dni>52518780</Dni>
+  <Edad>6</Edad>
+  <NotaUno>5</NotaUno>
+  <NotaDos>9</NotaDos>
+  <NotaTres>7</NotaTres>
+  <IdAlumno>22</IdAlumno>
+  <Responsable>18</Responsable>
+</Alumno>
